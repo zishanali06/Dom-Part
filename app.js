@@ -25,3 +25,17 @@ document.addEventListener('DOMContentLoaded', function(){
 
 let button2 = document.querySelector("#btn");
 
+button2.addEventListener('click', function(){
+    let boxcontent = document.querySelector('.txt');
+
+    alert(boxcontent.value);
+});
+
+let newdiv = document.querySelector('.newdiv');
+newdiv.addEventListener('mouseover', function(){
+    newdiv.style.backgroundColor = 'red';
+});
+newdiv.addEventListener('mouseleave', function(){
+    newdiv.style.backgroundColor = 'blue';
+})
+
