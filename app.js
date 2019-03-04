@@ -20,6 +20,22 @@ document.addEventListener('DOMContentLoaded', function(){
 
         para.style.color = colors[Math.floor(Math.random() * 5)];
     })
+    
+    let button3 = document.createElement('button');
+    let buttontxt2 = document.createTextNode('Click Me for New Div Span');
+
+    button3.appendChild(buttontxt2);
+    document.body.appendChild(button3);
+
+    let emptydiv = document.createElement('div');
+    document.body.appendChild(emptydiv);
+    
+    button3.addEventListener('click', function(){
+        let span = document.createElement('span');
+        let spantext = document.createTextNode('Zishan');
+        span.appendChild(spantext);
+        emptydiv.appendChild(span);
+    });
 
 });
 
